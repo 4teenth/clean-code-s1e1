@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
@@ -15,7 +17,7 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="info-container">
+      <header class="info-container">
         <img src="./assets/eisenhower-matrix.jpg" alt="app-plan-view" class="app-plan-img">
         <a
           class="info-link-more"
@@ -23,50 +25,62 @@
         >
         Want more details?
         </a>
-      </div>
-      <div class="main-container">
+      </header>
+      <main class="main-container">
+        <section class="section-add">
         <h3 class="task-title">
           Add Item
         </h3>
-        <div class="add-task-wrapper">
+        <form action="#" class="add-task-wrapper">
           <label for="new-task" class="hidden-label">Add Item</label>
           <input id="new-task" class="task-input" type="text">
           <button class="btn">Add</button>
-        </div>
+        </form>
+        </section>
+        <section class="section-todo">
         <h3 class="task-title">Todo</h3>
         <ul id="incompleted-tasks" class="list">
           <li class="list-item">
-            <input type="checkbox" class="task-checkbox">
-            <label class="task-label">Pay Bills</label>
-            <input type="text" class="task-input">
-            <button class="btn edit">Edit</button>
-            <button class="btn delete">
-              <img src="./assets/remove.svg" class="remove-icon-btn">
-            </button>
+            <form action="#" class="list-item-form">
+              <input type="checkbox" class="task-checkbox">
+              <label class="task-label">Pay Bills</label>
+              <input type="text" class="task-input">
+              <button class="btn edit">Edit</button>
+              <button class="btn delete">
+                <img src="./assets/remove.svg" alt="" class="remove-icon-btn">
+              </button>
+            </form>
           </li>
           <li class="edited-list list-item">
-            <input type="checkbox" class="task-checkbox">
-            <label class="task-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task-input">
-            <button class="btn edit">Save</button>
-            <button class="btn delete">
-              <img src="./assets/remove.svg" class="remove-icon-btn">
-            </button>
+            <form action="#" class="list-item-form">
+              <input type="checkbox" class="task-checkbox">
+              <label class="task-label">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="task-input">
+              <button class="btn edit">Save</button>
+              <button class="btn delete">
+                <img src="./assets/remove.svg" alt="" class="remove-icon-btn">
+              </button>
+            </form>
           </li>
         </ul>
+        </section>
+        <section class="section-completed">
         <h3 class="task-title">Completed</h3>
         <ul id="completed-tasks" class="list">
           <li class="list-item">
-            <input type="checkbox" class="task-checkbox" checked>
-            <label class="task-label">See the Doctor</label>
-            <input type="text" class="task-input">
-            <button class="btn edit">Edit</button>
-            <button class="btn delete">
-              <img src="./assets/remove.svg" class="remove-icon-btn">
-            </button>
+            <form action="#" class="list-item-form">
+              <input type="checkbox" class="task-checkbox" checked>
+              <label class="task-label">See the Doctor</label>
+              <input type="text" class="task-input">
+              <button class="btn edit">Edit</button>
+              <button class="btn delete">
+                <img src="./assets/remove.svg" alt="" class="remove-icon-btn">
+              </button>
+            </form>
           </li>
         </ul>
-      </div>
+        </section>
+      </main>
     </div>
     <script src="./app.js"></script>
   </body>

@@ -42,6 +42,12 @@
 .list-item, .task-title {
   list-style: none;
 }
+.list-item-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
 .task-input, .task-label, .edited-input {
   outline: none;
 }
